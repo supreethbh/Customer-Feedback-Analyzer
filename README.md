@@ -45,12 +45,17 @@ Store in SQLite Database
 
 ## Installation
 
-1. **Clone or navigate to the project directory:**
+1. **UV Installation methods:**
+   ```bash
+   https://docs.astral.sh/uv/getting-started/installation/
+   ```
+
+2. **Clone or navigate to the project directory:**
    ```bash
    cd Customer-Feedback-Analyzer
    ```
 
-2. **Install dependencies using uv:**
+3. **Install dependencies using uv:**
    ```bash
    uv pip install -e .
    ```
@@ -77,6 +82,40 @@ To get your API key:
 
 ## Usage
 
+### Initiate Virtual Environment
+
+### Activate the Virtual Environment
+
+1. Navigate to the project directory and activate the virtual environment:
+
+   - **Windows (Command Prompt):**
+     ```cmd
+     .venv\Scripts\activate
+     ```
+   - **Windows (PowerShell):**
+     ```powershell
+     .venv\Scripts\Activate.ps1
+     ```
+   - **macOS / Linux:**
+     ```bash
+     source .venv/bin/activate
+     ```
+
+2. **Verify Activation:**
+   Ensure the prompt shows `(.venv)` or verify the Python path:
+   
+   - **Windows:**
+     ```cmd
+     where python
+     ```
+   - **macOS / Linux:**
+     ```bash
+     which python
+     ```
+
+   **Expected Output:**
+   The output should point to the `.venv` directory (e.g., `...\Customer-Feedback-Analyzer\.venv\Scripts\python.exe`).
+
 ### Start the Backend (API Server)
 
 In one terminal, run the FastAPI server:
@@ -88,6 +127,11 @@ uv run python api.py
 Or with uvicorn directly:
 ```bash
 uv run uvicorn api:app --reload
+```
+
+Or with activated virtual environment terminal:
+```bash
+fastapi run api.py
 ```
 
 The API will be available at `http://127.0.0.1:8000`

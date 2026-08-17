@@ -1,5 +1,5 @@
 [project]
-name = "9-project-feedback-analyzer"
+name = "customer-feedback-analyzer"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-9-project-feedback-analyzer = "9_project_feedback_analyzer:main"
+customer-feedback-analyzer = "customer_feedback_analyzer:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
