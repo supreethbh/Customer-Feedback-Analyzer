@@ -47,7 +47,7 @@ Store in SQLite Database
 
 1. **Clone or navigate to the project directory:**
    ```bash
-   cd 9_PROJECT_FEEDBACK_ANALYZER
+   cd Customer-Feedback-Analyzer
    ```
 
 2. **Install dependencies using uv:**
@@ -187,4 +187,4 @@ All analyzed reviews are automatically saved to the database and can be retrieve
 
 ## License
 
-This project is part of the Python Practice AI curriculum.
+*This project is developed as part of the Python Generative AI and Agentic AI coursework using Google Gemini models.*
