@@ -1,8 +1,11 @@
 [project]
 name = "customer-feedback-analyzer"
 version = "0.1.0"
-description = "Add your description here"
+description = "Analyze customer feedback using AI-powered sentiment and insight extraction"
 readme = "README.md"
+authors = [
+    { name = "Supreeth BH", email = "supreeth.h.gowda@gmail.com" }
+]
 requires-python = ">=3.14"
 dependencies = [
     "fastapi[standard]>=0.141.1",
